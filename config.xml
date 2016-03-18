@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "ar.argentina.edollar"
+        versionCode="10" 
+        version   = "1.0.0">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>EDOLLAR</name>
+
+    <description>
+       Cotización del dolar oficialy dolar blue, conversion a pesos argentinos.
+    </description>
+    
+    <icon src="icon.png" />
+
+    <author href="https://edinsoncs.com" email="edinsonlabs@hotmail.com">
+        Edinson Carranza Saldaña
+    </author>
+
+    <preference name="permissions" value="none"/>
+
+    <access origin="*" browserOnly="true"/>
+
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <gap:plugin name="org.apache.cordova.geolocation" />
+
+    <gap:plugin name="com.google.cordova.admob-facebook" source="plugins.cordova.io" />
+    <gap:plugin name="com.google.cordova.admob-flurry" source="plugins.cordova.io" />
+    <gap:plugin name="com.google.cordova.admob-iad" source="plugins.cordova.io" />
+    <gap:plugin name="com.google.cordova.admob-inmobi" source="plugins.cordova.io" />
+    <gap:plugin name="com.google.cordova.admob-mmedia" source="plugins.cordova.io" />
+    <gap:plugin name="com.google.cordova.admob-mobfox" source="plugins.cordova.io" />
+    
+    
+</widget>

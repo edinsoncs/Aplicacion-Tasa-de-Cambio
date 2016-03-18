@@ -1,0 +1,49 @@
+doctype html
+head
+	meta(charset="UFT-8")
+	meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+	meta(name="description", content="app1")
+	title App Cambio
+	link(rel="stylesheet", href="css/normalize.css")
+	link(rel="stylesheet", href="css/app.css")
+		
+	append jscripts
+		script(src="http://code.jquery.com/jquery-2.1.4.min.js")
+		
+body
+
+	header(class="app__header")
+		div(class="app__titles")
+			i(class="el el-align-justify jsMenu")
+			span(class="app--Home") Edollar
+		ul(class="app__Ul")
+			li(class="app__Ul--list")
+				a(href="index.html", class="link") Calcular Oficial 
+				
+	section(class="app__contenido")
+			
+		article(class="app__Datos")
+			div(class="app__Cont")
+				h2(class="app__Names u--Margen blanco") Dolar Oficial: 
+					span(class="app__Names--Oficial") ...
+					
+			div(class="app__Cont")
+				h2(class="app__Names u--Margen blanco") Dolar Blue: 
+					span(class="app__Names--Blue") ...	
+		
+	article(class="app__Obtener")
+			form(class="form", method="GET")
+				fieldset(class="form--Cont")
+					input(type="number", id="datoUserBlue", name="datoUser", placeholder="Ingresa tu monto dolares")
+				fieldset(class="form--Cont")
+					input(type="number", id="datoBlue")
+				fieldset(class="form--Cont")
+					input(class="mostrarBlue", type="button", value="Mostrar Cambio")
+
+			article(class="resultado")
+				h4(class="resultado--Dolar")
+
+	script(src="js/api.js")
+	script(src="js/admob.js")
+
+	
